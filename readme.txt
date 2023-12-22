@@ -1,6 +1,6 @@
 === Easy Responsive Video ===
 Contributors: clubside
-Plugin link: https://rankmath.com/?utm_source=LP&utm_campaign=WP
+Plugin link: https://github.com/clubside/vern-responsive-video
 Tags: video, responsive, oembed
 Tested up to: 6.4.2
 Requires at least: 2.9

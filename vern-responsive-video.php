@@ -5,7 +5,7 @@
  * Version:           1.0.0
  * Requires at least: 2.9
  * Requires PHP:      5.0
- * Plugin URI:        https://rankmath.com/
+ * Plugin URI:        https://github.com/clubside/vern-responsive-video
  * Author:            Chris Rowley
  * Author URI:        https://vgpavilion.com
  * License:           GPL v2 or later
