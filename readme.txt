@@ -13,10 +13,11 @@ Easy Responsive Video adapts oEmbed video to full width while maintaining aspect
 
 == Description ==
 
-Automatically adapt your embedded YouTube videos to the full width of their containers while maintaining the correct aspect ratio.
+Automatically adapt your embedded videos to the full width of their containers while maintaining the correct aspect ratio.
 
-This is a simple filter that scans each embed on your posts, pages and custom post types, reads the width and height on the IFRAME and adds a style
-attribute including CSS `width`, `height` and `aspect-ratio` properties.
+This is a simple filter that scans each embed on your posts, pages and custom post types, reads the width and height on the `iframe` and adds a style attribute including CSS `width`, `height` and `aspect-ratio` properties.
+
+Currently supporting YouTube, Vimeo, WordPress/VideoPress and DailyMotion.
 
 == Installation ==
 
@@ -31,6 +32,11 @@ attribute including CSS `width`, `height` and `aspect-ratio` properties.
 2. Activate the Easy Responsive Video plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.1.0 [Dec 23, 2023] =
+
+- Reworked provider identification.
+- Added support for Vimeo, WordPress/VideoPress and DailyMotion.
 
 = 1.0.0 [Dec 22, 2023] =
 

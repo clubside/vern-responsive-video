@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Easy Responsive Video
  * Description:       Easy Responsive Video adapts oEmbed video to full width while maintaining aspect ratio.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 2.9
  * Requires PHP:      5.0
  * Plugin URI:        https://github.com/clubside/vern-responsive-video
@@ -14,15 +14,21 @@
  */
 function vern_responsive_video( $cached_html, $url, $attr, $post_id ) {
 	// list of URL patterns to match
-	$sources = array('://youtube.com', '://youtu.be', '://www.youtube.com', '://m.youtube.com');
-	$supported = false;
-	foreach ($sources as $source) {
-		if (strpos($url, $source)) {
-			$supported = true;
-			break;
-		}
-	}
-	if ($supported) {
+	$sources = array(
+		'youtube.com',
+		'youtu.be',
+		'www.youtube.com',
+		'm.youtube.com',
+		'vimeo.com',
+		'www.vimeo.com',
+		'player.vimeo.com',
+		'videopress.com',
+		'video.wordpress.com',
+		'dailymotion.com',
+		'www.dailymotion.com',
+		'geo.dailymotion.com'
+	);
+	if (in_array(parse_url($url, PHP_URL_HOST), $sources)) {
 		// find the end of the initial IFRAME element
 		$iframe_end = strpos( $cached_html, '>');
 		// extract the WIDTH attribute if present
