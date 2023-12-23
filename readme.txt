@@ -15,7 +15,7 @@ Easy Responsive Video adapts oEmbed video to full width while maintaining aspect
 
 Automatically adapt your embedded videos to the full width of their containers while maintaining the correct aspect ratio.
 
-This is a simple filter that scans each embed on your posts, pages and custom post types, reads the width and height on the `iframe` and adds a style attribute including CSS `width`, `height` and `aspect-ratio` properties.
+This is a simple filter that scans each embed in your posts, pages and custom post types, reads the width and height on the `iframe` and adds a style attribute including CSS `width`, `height` and `aspect-ratio` properties.
 
 Currently supporting YouTube, Vimeo, WordPress/VideoPress and DailyMotion.
 
