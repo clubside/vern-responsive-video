@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Easy Responsive Video
  * Description:       Easy Responsive Video adapts oEmbed video to full width while maintaining aspect ratio.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 2.9
  * Requires PHP:      5.0
  * Plugin URI:        https://github.com/clubside/vern-responsive-video
