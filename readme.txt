@@ -5,7 +5,7 @@ Tags: video, responsive, oembed
 Tested up to: 6.4.3
 Requires at least: 2.9
 Requires PHP: 5.0
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ Currently supporting YouTube, Vimeo, WordPress/VideoPress and DailyMotion.
 2. Activate the Easy Responsive Video plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.3.0 [Feb 12, 2024] =
+
+- Disabled direct file access.
 
 = 1.2.0 [Feb 11, 2024] =
 
