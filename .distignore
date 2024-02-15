@@ -3,6 +3,7 @@
 /.github
 /node_modules
 /coverage
+/svn
 
 .distignore
 .gitignore
