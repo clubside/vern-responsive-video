@@ -33,14 +33,17 @@ function vern_responsive_video( $cached_html, $url, $attr, $post_id ) {
 	if (in_array(parse_url($url, PHP_URL_HOST), $sources)) {
 		// find the end of the initial IFRAME element
 		$iframe_end = strpos( $cached_html, '>');
+		if ($iframe_end === false) {
+			return $cached_html; // unexpected HTML, do nothing
+		}
 		// extract the WIDTH attribute if present
-		if (preg_match('/width="(\d*)"/sm', $cached_html, $regs)) {
+		if (preg_match('/width=["\']?(\d+)["\']?/i', $cached_html, $regs)) {
 			$width = $regs[1];
 		} else {
 			$width = '';
 		}
 		// extract the HEIGHT attribute if present
-		if (preg_match('/height="(\d*)"/sm', $cached_html, $regs)) {
+		if (preg_match('/height=["\']?(\d+)["\']?/i', $cached_html, $regs)) {
 			$height = $regs[1];
 		} else {
 			$height = '';
